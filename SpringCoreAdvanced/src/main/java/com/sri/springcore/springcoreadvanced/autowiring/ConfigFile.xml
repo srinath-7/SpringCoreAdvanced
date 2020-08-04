@@ -13,7 +13,7 @@
 
 	<bean
 		class="com.sri.springcore.springcoreadvanced.autowiring.Employee"
-		name="employee" autowire="byType" />
+		name="employee" autowire="byName" />
 
 
 </beans>
