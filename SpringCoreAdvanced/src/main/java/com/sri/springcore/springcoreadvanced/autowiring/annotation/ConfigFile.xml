@@ -8,9 +8,14 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:annotation-config></context:annotation-config>
+    
 	<bean
 		class="com.sri.springcore.springcoreadvanced.autowiring.annotation.Address"
-		name="address" p:hno="1223" p:street="mera" p:city="Melbourne" />
+		name="address123" p:hno="123" p:street="mera" p:city="Melbourne" />
+		
+	<bean
+		class="com.sri.springcore.springcoreadvanced.autowiring.annotation.Address"
+		name="address2" p:hno="567" p:street="mera" p:city="Melbourne" />
 
 	<bean
 		class="com.sri.springcore.springcoreadvanced.autowiring.annotation.Employee"
