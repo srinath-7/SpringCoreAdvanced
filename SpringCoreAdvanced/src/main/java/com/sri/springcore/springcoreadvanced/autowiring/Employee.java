@@ -3,6 +3,11 @@ package com.sri.springcore.springcoreadvanced.autowiring;
 public class Employee {
 	
 	private Address address;
+	
+	
+	public Employee(Address address) {
+		this.address = address;
+	}
 
 	public Address getAddress() {
 		return address;
