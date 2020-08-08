@@ -11,17 +11,8 @@
     http://www.springframework.org/schema/util
     http://www.springframework.org/schema/util/spring-util.xsd">
 
-	<util:list list-class="java.util.LinkedList"
-		id="productNames">
-		<value>Mac Book</value>
-		<value>Iphone</value>
-	</util:list>
+	<context:component-scan
+		base-package="com.sri.springcore.springcoreadvanced.sterotype.annotation
+    " />
 
-	<bean
-		class="com.sri.springcore.springcoreadvanced.standalone.collections.ProductsList"
-		name="ProductsList">
-		<property name="productNames">
-			<ref bean="productNames" />
-		</property>
-	</bean>
 </beans>
