@@ -1,8 +1,10 @@
 package com.sri.springcore.springcoreadvanced.sterotype.annotation;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component("inst")
+@Scope("prototype")
 public class Instructor {
 	
 	int id; 
