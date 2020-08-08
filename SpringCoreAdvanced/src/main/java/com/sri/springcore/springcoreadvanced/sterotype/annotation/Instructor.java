@@ -1,5 +1,6 @@
 package com.sri.springcore.springcoreadvanced.sterotype.annotation;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -7,7 +8,9 @@ import org.springframework.stereotype.Component;
 @Scope("prototype")
 public class Instructor {
 	
+	@Value("20")
 	int id; 
+	@Value("Core Java")
 	String name;
 	
 	public int getId() {
