@@ -1,5 +1,7 @@
 package com.sri.springcore.springcoreadvanced.sterotype.annotation;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -12,6 +14,9 @@ public class Instructor {
 	int id; 
 	@Value("Core Java")
 	String name;
+    
+	@Value("#{topics}")
+	List<String> topics;
 	
 	public int getId() {
 		return id;
@@ -29,10 +34,13 @@ public class Instructor {
 		this.name = name;
 	}
 
+	
 	@Override
 	public String toString() {
-		return "Instructor [id=" + id + ", name=" + name + "]";
+		return "Instructor [id=" + id + ", name=" + name + ", topics=" + topics + "]";
 	}
+
+	
 	
 	
 	
